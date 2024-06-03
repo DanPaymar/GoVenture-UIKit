@@ -10,9 +10,12 @@
 		B730815E2C0A4AC0003D7748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730815D2C0A4AC0003D7748 /* AppDelegate.swift */; };
 		B73081602C0A4AC0003D7748 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730815F2C0A4AC0003D7748 /* SceneDelegate.swift */; };
 		B73081622C0A4AC0003D7748 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73081612C0A4AC0003D7748 /* MapVC.swift */; };
-		B73081652C0A4AC0003D7748 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B73081642C0A4AC0003D7748 /* Base */; };
 		B73081672C0A4AC1003D7748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B73081662C0A4AC1003D7748 /* Assets.xcassets */; };
 		B730816A2C0A4AC1003D7748 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B73081692C0A4AC1003D7748 /* Base */; };
+		B77FA7862C0B8C3C0014B710 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = B77FA7852C0B8C3C0014B710 /* MapboxMaps */; };
+		B77FA78A2C0B8DAD0014B710 /* GearVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77FA7892C0B8DAD0014B710 /* GearVC.swift */; };
+		B77FA78D2C0E29930014B710 /* MyMapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77FA78C2C0E29930014B710 /* MyMapsVC.swift */; };
+		B77FA78F2C0E2A2F0014B710 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77FA78E2C0E2A2F0014B710 /* TabVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,12 @@
 		B730815D2C0A4AC0003D7748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B730815F2C0A4AC0003D7748 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B73081612C0A4AC0003D7748 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
-		B73081642C0A4AC0003D7748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B73081662C0A4AC1003D7748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B73081692C0A4AC1003D7748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B730816B2C0A4AC1003D7748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B77FA7892C0B8DAD0014B710 /* GearVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearVC.swift; sourceTree = "<group>"; };
+		B77FA78C2C0E29930014B710 /* MyMapsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapsVC.swift; sourceTree = "<group>"; };
+		B77FA78E2C0E2A2F0014B710 /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77FA7862C0B8C3C0014B710 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +62,41 @@
 		B730815C2C0A4AC0003D7748 /* GoVenture */ = {
 			isa = PBXGroup;
 			children = (
-				B730815D2C0A4AC0003D7748 /* AppDelegate.swift */,
-				B730815F2C0A4AC0003D7748 /* SceneDelegate.swift */,
-				B73081612C0A4AC0003D7748 /* MapVC.swift */,
-				B73081632C0A4AC0003D7748 /* Main.storyboard */,
-				B73081662C0A4AC1003D7748 /* Assets.xcassets */,
+				B77FA78B2C0B8DB30014B710 /* Views */,
+				B77FA7882C0B8CCF0014B710 /* Control */,
 				B73081682C0A4AC1003D7748 /* LaunchScreen.storyboard */,
+				B77FA7872C0B8CC20014B710 /* Resources */,
+				B73081662C0A4AC1003D7748 /* Assets.xcassets */,
 				B730816B2C0A4AC1003D7748 /* Info.plist */,
 			);
 			path = GoVenture;
+			sourceTree = "<group>";
+		};
+		B77FA7872C0B8CC20014B710 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B730815D2C0A4AC0003D7748 /* AppDelegate.swift */,
+				B730815F2C0A4AC0003D7748 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B77FA7882C0B8CCF0014B710 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		B77FA78B2C0B8DB30014B710 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B77FA78E2C0E2A2F0014B710 /* TabVC.swift */,
+				B73081612C0A4AC0003D7748 /* MapVC.swift */,
+				B77FA7892C0B8DAD0014B710 /* GearVC.swift */,
+				B77FA78C2C0E29930014B710 /* MyMapsVC.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +115,9 @@
 			dependencies = (
 			);
 			name = GoVenture;
+			packageProductDependencies = (
+				B77FA7852C0B8C3C0014B710 /* MapboxMaps */,
+			);
 			productName = GoVenture;
 			productReference = B730815A2C0A4AC0003D7748 /* GoVenture.app */;
 			productType = "com.apple.product-type.application";
@@ -112,7 +147,7 @@
 			);
 			mainGroup = B73081512C0A4AC0003D7748;
 			packageReferences = (
-				B73081712C0A4B80003D7748 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				B77FA7842C0B8C3C0014B710 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
 			);
 			productRefGroup = B730815B2C0A4AC0003D7748 /* Products */;
 			projectDirPath = "";
@@ -130,7 +165,6 @@
 			files = (
 				B73081672C0A4AC1003D7748 /* Assets.xcassets in Resources */,
 				B730816A2C0A4AC1003D7748 /* Base in Resources */,
-				B73081652C0A4AC0003D7748 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,23 +175,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77FA78F2C0E2A2F0014B710 /* TabVC.swift in Sources */,
+				B77FA78D2C0E29930014B710 /* MyMapsVC.swift in Sources */,
 				B73081622C0A4AC0003D7748 /* MapVC.swift in Sources */,
 				B730815E2C0A4AC0003D7748 /* AppDelegate.swift in Sources */,
 				B73081602C0A4AC0003D7748 /* SceneDelegate.swift in Sources */,
+				B77FA78A2C0B8DAD0014B710 /* GearVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B73081632C0A4AC0003D7748 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B73081642C0A4AC0003D7748 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B73081682C0A4AC1003D7748 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -221,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -278,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -299,7 +328,6 @@
 				INFOPLIST_FILE = GoVenture/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +354,6 @@
 				INFOPLIST_FILE = GoVenture/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -366,7 +393,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B73081712C0A4B80003D7748 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+		B77FA7842C0B8C3C0014B710 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
 			requirement = {
@@ -375,6 +402,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B77FA7852C0B8C3C0014B710 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B77FA7842C0B8C3C0014B710 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B73081522C0A4AC0003D7748 /* Project object */;
 }
